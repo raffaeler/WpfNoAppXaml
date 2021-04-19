@@ -25,34 +25,12 @@ namespace SimpleAppWithNoAppXaml
             wnd.Show();
         }
 
-        public void LoadGlobalResourceDictionary(Uri uri)
-        {
-            var resourceDictionary = LoadResourceDictionary(uri);
-            Application.Current.Resources.MergedDictionaries.Add(resourceDictionary);
-        }
-
         public void LoadGlobalResourceDictionary(string relativeUri)
         {
-            var resourceDictionary = LoadResourceDictionary(relativeUri);
+            Uri uri = new Uri(relativeUri, UriKind.Relative);
+            var resourceDictionary = (ResourceDictionary)Application.LoadComponent(uri);
             Application.Current.Resources.MergedDictionaries.Add(resourceDictionary);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="relativeUri">A relative uri like /Resources/myres.xaml</param>
-        public ResourceDictionary LoadResourceDictionary(string relativeUri)
-        {
-            Uri uri = new Uri(relativeUri, UriKind.Relative);
-            return LoadResourceDictionary(uri);
-        }
-
-        public ResourceDictionary LoadResourceDictionary(Uri uri)
-        {
-            return (ResourceDictionary)Application.LoadComponent(uri);
-            //var info = Application.GetResourceStream(uri);
-            //System.Windows.Markup.XamlReader reader = new System.Windows.Markup.XamlReader();
-            //return (ResourceDictionary)reader.LoadAsync(info.Stream);
-        }
     }
 }

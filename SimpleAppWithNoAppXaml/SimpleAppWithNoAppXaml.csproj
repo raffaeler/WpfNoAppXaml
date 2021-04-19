@@ -7,19 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-
-        <None Include="DesignTimeResources.xaml">
+        <None Include="Properties\DesignTimeResources.xaml">
             <SubType>Designer</SubType>
             <Generator>MSBuild:Compile</Generator>
         </None>
-
-        <!--<Page Include="Resources\GlobalResources.xaml">
-            <SubType>Designer</SubType>
-            <Generator>MSBuild:Compile</Generator>
-        </Page>-->
-
-        
-
     </ItemGroup>
 
 </Project>

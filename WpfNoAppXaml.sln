@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.31213.239
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAppWithNoAppXaml", "SimpleAppWithNoAppXaml\SimpleAppWithNoAppXaml.csproj", "{ADFBCFBD-58A1-4369-8C92-20E3D23C0DC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F6A1A30-FE30-44E1-8022-17A0802D7C3A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
