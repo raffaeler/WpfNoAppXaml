@@ -59,8 +59,8 @@ This project refers to .NET WPF 3.1, 5.0 and newer (.NET Core).
 
 6. Create a `Properties` folder
 7. Create a resource dictionary named `DesignTimeResources.xaml` inside the `Properties` folder
-> This file contains the resources used from the Visual Studio designer. You can change the file name if you want.
-> It is fundamental the folder is called `Properties` otherwise it won't work
+> This file contains the resources used from the Visual Studio designer.
+> The file and folder names are 'special' and must not be modified, otherwise it won't work.
 
 8. The `DesignTimeResources.xaml` just contains a reference to the other resource dictionaries you already use at runtime
 ```
